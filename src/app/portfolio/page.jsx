@@ -7,7 +7,7 @@ import { useRef } from "react";
 const Portfolio = () => {
   const ref = useRef();
   const { scrollYProgress } = useScroll({ target: ref });
-  const x = useTransform(scrollYProgress, [0, 1], ["0%", "-80%"]);
+  const x = useTransform(scrollYProgress, [0, 1], ["0%", "-70%"]);
 
   const items = [
     {
@@ -21,9 +21,9 @@ const Portfolio = () => {
     {
       id: 2,
       color: "from-blue-300 to-violet-300",
-      title: "React Native Whats App Clone",
+      title: "RN What's_app",
       desc: "Old version of the whats app has been cloned and Amplify has been added as the Auth configuration",
-      img: "/WhatsApp.png",
+      img: "https://images.pexels.com/photos/18540208/pexels-photo-18540208/free-photo-of-wood-landscape-water-hill.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       link: "https://github.com/Rajeshnani123/WhatsappClone",
     },
     {
@@ -32,14 +32,6 @@ const Portfolio = () => {
       title: "Todo App",
       desc: "Todo application for the android and iOS versions with the typescript",
       img: "https://images.pexels.com/photos/6894528/pexels-photo-6894528.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-      link: "https://lama.dev",
-    },
-    {
-      id: 4,
-      color: "from-purple-300 to-red-300",
-      title: "Spotify Music App",
-      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
-      img: "https://images.pexels.com/photos/18540208/pexels-photo-18540208/free-photo-of-wood-landscape-water-hill.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       link: "https://lama.dev",
     },
   ];

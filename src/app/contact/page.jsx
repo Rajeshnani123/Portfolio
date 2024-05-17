@@ -4,7 +4,7 @@ import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
 const Contact = () => {
-  const [success, setSuccess] = useState(true);
+  const [success, setSuccess] = useState(false);
   const [error, setError] = useState(false);
   const text = "Say hello";
 
@@ -22,10 +22,12 @@ const Contact = () => {
       )
       .then(
         (result) => {
+          console.log(result);
           setSuccess(true);
           formRef.current.reset();
         },
         (error) => {
+          console.log(error);
           setError(true);
         }
       );
