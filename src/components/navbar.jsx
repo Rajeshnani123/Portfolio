@@ -152,7 +152,7 @@ const Nav = () => {
             className="absolute top-0 left-0 w-screen h-screen bg-black text-white flex flex-col items-center justify-center gap-8 text-4xl z-40"
           >
             {sections.map((section) => (
-              <motion.div variants={listItemVariant}>
+              <motion.div key={section.title} variants={listItemVariant}>
                 <Link href={section.url} key={section.title}>
                   {section.title}
                 </Link>
