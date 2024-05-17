@@ -13,24 +13,24 @@ const Portfolio = () => {
     {
       id: 1,
       color: "from-red-300 to-blue-300",
-      title: "React Commerce",
-      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
-      img: "https://images.pexels.com/photos/18073372/pexels-photo-18073372/free-photo-of-young-man-sitting-in-a-car-on-a-night-street.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-      link: "https://lama.dev",
+      title: "Nextjs Prompts",
+      desc: "Its prompts sharing platform when user want to share the respective prompts which he/she got the respective result with everyone",
+      img: "/prompt.png",
+      link: "https://github.com/Rajeshnani123/Promptopia",
     },
     {
       id: 2,
       color: "from-blue-300 to-violet-300",
-      title: "Next.js Medium Blog",
-      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
-      img: "https://images.pexels.com/photos/18023772/pexels-photo-18023772/free-photo-of-close-up-of-a-person-holding-a-wristwatch.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-      link: "https://lama.dev",
+      title: "React Native Whats App Clone",
+      desc: "Old version of the whats app has been cloned and Amplify has been added as the Auth configuration",
+      img: "/WhatsApp.png",
+      link: "https://github.com/Rajeshnani123/WhatsappClone",
     },
     {
       id: 3,
       color: "from-violet-300 to-purple-300",
-      title: "Vanilla Book App",
-      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
+      title: "Todo App",
+      desc: "Todo application for the android and iOS versions with the typescript",
       img: "https://images.pexels.com/photos/6894528/pexels-photo-6894528.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
       link: "https://lama.dev",
     },
@@ -63,19 +63,19 @@ const Portfolio = () => {
                 className={`h-screen w-screen flex items-center justify-center bg-gradient-to-r ${item.color}`}
                 key={item.id}
               >
-                <div className="flex flex-col gap-5 text-white">
+                <div className="flex flex-col gap-5 text-white ">
                   <h1 className=" font-bold md:text-4xl lg:text-6xl xl:text-8xl">
                     {item.title}
                   </h1>
-                  <div className="relative w-70 h-46 md:w-86 md:h-54 lg:w-[400px] lg:h-[250px] xl:w-[500px] xl:h-[320px]">
+                  <div className="relative w-70 h-46 md:w-86 md:h-54 lg:w-[400px] lg:h-[250px] xl:w-[500px] xl:h-[320px]flex justify-center ">
                     <Image src={item.img} alt="" fill />
                   </div>
                   <p className="w-80 md:w-96 lg:w-[500px] lg:text-lg xl:w-[600px]">
                     {item.desc}
                   </p>
-                  <Link href={item.link} className="flex justify-end">
+                  <Link href={item.link} className="flex justify-center">
                     <button className="p-2 text-sm md:p-4 md:text-md lg:p-8 lg:text-lg bg-white text-gray-600 font-semibold m-4 rounded">
-                      See Demo
+                      See Repo
                     </button>
                   </Link>
                 </div>

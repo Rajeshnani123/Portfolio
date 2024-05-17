@@ -14,11 +14,17 @@ const sections = [
 ];
 
 const mediaIcons = [
-  { image: "/github.png", name: "github", href: "/" },
-  { image: "/dribbble.png", name: "insta", href: "/" },
-  { image: "/instagram.png", name: "linkdlin", href: "/" },
-  { image: "/facebook.png", name: "facebook", href: "/" },
+  {
+    image: "/github.png",
+    name: "github",
+    href: "https://github.com/Rajeshnani123",
+  },
   { image: "/linkedin.png", name: "pin_interest", href: "/" },
+  {
+    image: "/instagram.png",
+    name: "instagram",
+    href: "https://www.instagram.com/rajesh_d_native/",
+  },
 ];
 
 const Nav = () => {
@@ -57,22 +63,22 @@ const Nav = () => {
     },
     opened: {
       x: 0,
-      transition:{
-        when : "beforeChildren",
-        staggerChildren:0.2,
-      }
+      transition: {
+        when: "beforeChildren",
+        staggerChildren: 0.2,
+      },
     },
   };
 
   const listItemVariant = {
     closed: {
-        x:-10,
-        opacity:0,
+      x: -10,
+      opacity: 0,
     },
-    opened:{
-        x:0,
-        opacity:1,
-    }
+    opened: {
+      x: 0,
+      opacity: 1,
+    },
   };
 
   return (
